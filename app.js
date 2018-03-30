@@ -10,9 +10,6 @@ var startServer = function (app) {
 	console.log("server started" + PORT);
 };
 
-app.get('/favicon.ico', function(req, res) {
-	res.status(204);
-});
 
 app.use("/", express.static('./content'));
 
